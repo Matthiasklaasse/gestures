@@ -1,12 +1,69 @@
+print('Loading code...')
+try:
+    import handtracking
+except ImportError:
+    print("handtracking not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'mediapipe'])
+        import handtracking
+        print("handtracking installed successfully.")
+    except Exception as e:
+        print("Failed to install handtracking:", str(e))
+        exit(1)
+
+print('Loading fake mouse input')
+try:
+    import pyautogui
+except ImportError:
+    print("pyautogui not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'pyautogui'])
+        import pyautogui
+        print("pyautogui installed successfully.")
+    except Exception as e:
+        print("Failed to install pyautogui:", str(e))
+        exit(1)
+
+print('Loaded fake mouse input')
+
 print('Loading camera input')
-import cv2
+try:
+    import cv2
+except ImportError:
+    print("cv2 (OpenCV) not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'opencv-python'])
+        import cv2
+        print("cv2 (OpenCV) installed successfully.")
+    except Exception as e:
+        print("Failed to install cv2 (OpenCV):", str(e))
+        exit(1)
+
 print('Loaded camera input')
+
 print('Loading ai hand detection')
-import mediapipe as mp
-print('loaded ai hand detection')
+try:
+    import mediapipe as mp
+except ImportError:
+    print("mediapipe not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'mediapipe'])
+        import mediapipe as mp
+        print("mediapipe installed successfully.")
+    except Exception as e:
+        print("Failed to install mediapipe:", str(e))
+        exit(1)
+
+print('Loaded ai hand detection')
+
 import math
 import time
 import configparser
+
 
 config = configparser.ConfigParser()
 config.read('config.ini')

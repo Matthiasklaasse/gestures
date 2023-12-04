@@ -1,7 +1,31 @@
 print('Loading code...')
-import handtracking
+try:
+    import handtracking
+except ImportError:
+    print("handtracking not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'mediapipe'])
+        import handtracking
+        print("handtracking installed successfully.")
+    except Exception as e:
+        print("Failed to install handtracking:", str(e))
+        exit(1)
+
 print('Loading fake mouse input')
-import pyautogui
+try:
+    import pyautogui
+except ImportError:
+    print("pyautogui not found. Installing...")
+    try:
+        import subprocess
+        subprocess.check_call(['pip', 'install', 'pyautogui'])
+        import pyautogui
+        print("pyautogui installed successfully.")
+    except Exception as e:
+        print("Failed to install pyautogui:", str(e))
+        exit(1)
+
 print('Loaded fake mouse input')
 import time
 import configparser
@@ -75,7 +99,7 @@ while True:
 
                         x = int(x * screen_width) * -1
                         y = int(y * screen_height)
-                        print(x, y)
+
                         pyautogui.moveRel(x, y)
                         last_position = current_position
 
