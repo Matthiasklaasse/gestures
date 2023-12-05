@@ -100,7 +100,7 @@ while True:
                         x = int(x * screen_width) * -1
                         y = int(y * screen_height)
 
-                        pyautogui.moveRel(x, y)
+                        pyautogui.moveRel(x, y, duration = int(config['Important']['mouse_speed']) - 10)
                         last_position = current_position
 
             else:
