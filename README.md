@@ -13,7 +13,7 @@ Make sure you have Python 3.x installed. The required libraries will be installe
 ```bash
 git clone https://github.com/Matthiasklaasse/gestures.git
 cd gestures
-python gestures.py
+python main.py
 ```
 ## Configuration
 
