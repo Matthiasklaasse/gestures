@@ -17,8 +17,8 @@ python gestures.py
 ```
 ## Configuration
 
-You can customize certain parameters in the config.ini file to adjust sensitivity, click duration, or any other settings that suit your preferences.
+You can customize certain parameters in the `config.ini` file to adjust sensitivity, click duration, or any other settings that suit your preferences.
 
 ## Troubleshooting
 
-If you encounter any issues while running the gestures project, here are some common problems and solutions:
+If you encounter any issues while running the gestures project, let me know in the comments of the demo video.
