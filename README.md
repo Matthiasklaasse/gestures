@@ -15,10 +15,10 @@ git clone https://github.com/Matthiasklaasse/gestures.git
 cd gestures
 python gestures.py
 ```
-##Configuration
+## Configuration
 
 You can customize certain parameters in the config.ini file to adjust sensitivity, click duration, or any other settings that suit your preferences.
 
-##Troubleshooting
+## Troubleshooting
 
-If you encounter any issues or have questions, please let me know (in the YouTube comments of the demo video).
+If you encounter any issues while running the gestures project, here are some common problems and solutions:
