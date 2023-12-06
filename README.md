@@ -11,7 +11,7 @@ The demo video is not out yet; I'm working on it. Stay tuned!
 Make sure you have Python 3.x installed. The required libraries will be installed automatically when you run the main script.
 
 ```bash
-git clone https://github.com/your-username/gestures.git
+git clone https://github.com/Matthiasklaasse/gestures.git
 cd gestures
 python gestures.py
 ```
