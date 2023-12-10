@@ -1,17 +1,3 @@
-print('Loading code...')
-try:
-    import handtracking
-except ImportError:
-    print("handtracking not found. Installing...")
-    try:
-        import subprocess
-        subprocess.check_call(['pip', 'install', 'mediapipe'])
-        import handtracking
-        print("handtracking installed successfully.")
-    except Exception as e:
-        print("Failed to install handtracking:", str(e))
-        exit(1)
-
 print('Loading fake mouse input')
 try:
     import pyautogui
