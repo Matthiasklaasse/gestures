@@ -4,7 +4,7 @@ Gestures is a Python-based project that enables you to control the mouse pointer
 
 ## Demo
 
-The demo video is not out yet; I'm working on it. Stay tuned!
+video: https://youtu.be/I7rycjtJuF8
 
 ## Prerequisites
 
