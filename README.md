@@ -22,3 +22,7 @@ You can customize certain parameters in the `config.ini` file to adjust sensitiv
 ## Troubleshooting
 
 If you encounter any issues while running the gestures project, let me know in the comments of the demo video.
+
+## Controls
+
+Touch you thumb and you index finger to drag the cursor touch your middle finger to click and your ring finger to left click
