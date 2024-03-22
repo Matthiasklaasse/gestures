@@ -4,7 +4,7 @@ Gestures is a Python-based project that enables you to control the mouse pointer
 
 ## Demo
 
-video: https://youtu.be/I7rycjtJuF8
+The demo video is not out yet; I'm working on it. Stay tuned!
 
 ## Prerequisites
 
@@ -25,4 +25,10 @@ If you encounter any issues while running the gestures project, let me know in t
 
 ## Controls
 
-Touch you thumb and you index finger to drag the cursor touch your middle finger to click and your ring finger to left click
+1. touch your middle finger with your thumb to click
+2. touch your ring finger with your thumb it triggers a right click
+3. touch you index finger with your thumb to 'grab' you cursor and move it around the screen
+
+## System reqirements
+
+The code will run anywhere but i recomend haveing a pc with a gpu becouse on my laptop with intel itergated grapics it lags a little, ive tried to make the code a efficiens as possible but python will be python...
